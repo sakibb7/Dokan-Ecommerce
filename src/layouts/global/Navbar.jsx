@@ -1,4 +1,9 @@
-import { IoBagHandle, CiSearch, AiOutlineUser, IoCartOutline } from "../assets";
+import {
+  IoBagHandle,
+  CiSearch,
+  AiOutlineUser,
+  IoCartOutline,
+} from "../../assets";
 import NavLinks from "./NavLinks";
 
 const Navabar = () => {
@@ -21,9 +26,9 @@ const Navabar = () => {
           <div className="cursor-pointer text-slate-600">
             <AiOutlineUser />
           </div>
-          <div className="relative cursor-pointer">
+          <div className="relative cursor-pointer text-slate-600">
             <IoCartOutline />
-            <div className="text-zinc-50 bg-sky-500/75 absolute bottom-4 left-4 text-xs rounded-full px-1">
+            <div className="text-zinc-50 bg-sky-500/75 absolute bottom-4 left-4 text-xs rounded-full px-2 py-1 font-[600]">
               3
             </div>
           </div>

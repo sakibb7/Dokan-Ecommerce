@@ -1,8 +1,8 @@
-import GiftCard from "../components/GiftCard";
-import { mainMenu } from "../data/menuItems";
+import GiftCard from "../../components/home/GiftCard";
+import { mainMenu } from "../../data/menuItems";
 import { Link } from "react-router-dom";
 
-import { dog, MdOutlineKeyboardArrowDown } from "../assets";
+import { dog, MdOutlineKeyboardArrowDown } from "../../assets";
 
 const NavLinks = () => {
   return (
