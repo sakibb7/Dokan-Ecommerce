@@ -40,7 +40,7 @@ const NavLinks = () => {
                     ))}
                   </div>
                   <div className="w-[35%]">
-                    <div>
+                    <div className="bg-cyan-300 rounded-[15px]">
                       <GiftCard
                         title="Sale Collection"
                         headingFirst="Up to"

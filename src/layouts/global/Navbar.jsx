@@ -8,7 +8,7 @@ import NavLinks from "./NavLinks";
 
 const Navabar = () => {
   return (
-    <nav className=" sticky top-0 w-full">
+    <nav className=" sticky top-0 w-full z-50 bg-white border-b">
       <div className="flex justify-between items-center max-w-screen-xl mx-auto">
         <div className="flex justify-center items-center text-2xl gap-2 font-[600]">
           <div className="text-4xl pb-1">
