@@ -7,7 +7,8 @@ export const newArrivals =[
         title:"Jump Rope Kids",
         price:"68.00",
         rating:"4.3",
-        reviews:"88 reviews"
+        reviews:"88 reviews",
+        offer:false,
     },
     {
         id:102,
@@ -15,7 +16,10 @@ export const newArrivals =[
         title:"Jump Rope Kids",
         price:"68.00",
         rating:"4.3",
-        reviews:"88 reviews"
+        reviews:"88 reviews",
+        offer:true,
+        offerType:"limited edition"
+
     },
     {
         id:103,
@@ -31,7 +35,10 @@ export const newArrivals =[
         title:"Jump Rope Kids",
         price:"68.00",
         rating:"4.3",
-        reviews:"88 reviews"
+        reviews:"88 reviews",
+        offer:true,
+        offerType:"50% discount"
+
     },
     
 ]

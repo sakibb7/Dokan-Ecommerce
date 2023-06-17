@@ -17,6 +17,8 @@ import {MdZoomOutMap} from "react-icons/md"
 import dog from "./images/dog.png"
 import sliderPic1 from "./images/slider/pic1.png"
 import product1 from "./images/products/product1.png"
+import stepImage from "./images/stepsImage.png"
+import earnMoney from "./images/moneyImage.png"
 
 export{
     IoBagHandle,
@@ -33,5 +35,7 @@ export{
     AiFillStar,
     HiOutlineReceiptPercent,
     BsBagCheckFill,
-    MdZoomOutMap
+    MdZoomOutMap,
+    stepImage,
+    earnMoney,
 }
