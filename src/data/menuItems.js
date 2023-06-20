@@ -1,3 +1,13 @@
+import {RiWomenLine,
+    AiOutlineMan,
+    TbMoodKid,
+    MdSportsBasketball,
+    AiOutlineCrown,
+    GiGoldBar} from "../assets"
+
+
+
+
 export const mainMenu =[
     {
         id:101,
@@ -93,18 +103,18 @@ export const mainMenu =[
                 sublink:[
                     {
                         id:101,
-                        name:"Home Page 1",
-                        link:"/"
+                        name:"Cart",
+                        link:"/cart"
                     },
                     {
                         id:102,
-                        name:"Home Page 2",
-                        link:"/"
+                        name:"Checkout",
+                        link:"/checkout"
                     },
                     {
                         id:103,
-                        name:"Header 1",
-                        link:"/"
+                        name:"All Products",
+                        link:"/all-products"
                     },
                     {
                         id:104,
@@ -157,4 +167,37 @@ export const mainMenu =[
         name:"Explore",
         link:"/",
     }
+]
+
+export const sectionMenu = [
+    {
+        id:101,
+        name:"Men",
+        icon:{AiOutlineMan},
+    },
+    {
+        id:102,
+        name:"Women",
+        icon:{RiWomenLine},
+    },
+    {
+        id:103,
+        name:"Kids",
+        icon:{TbMoodKid},
+    },
+    {
+        id:104,
+        name:"Sports",
+        icon:{MdSportsBasketball},
+    },
+    {
+        id:105,
+        name:"Beauty",
+        icon:{AiOutlineCrown},
+    },
+    {
+        id:106,
+        name:"Jewelry",
+        icon:{GiGoldBar},
+    },
 ]

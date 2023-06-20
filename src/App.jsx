@@ -1,15 +1,28 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./pages";
+import {
+  Home,
+  ProductCollections,
+  ProductDetails,
+  Cart,
+  Checkout,
+} from "./pages";
+import { ShopContextProvider } from "./context/ShopContext";
 
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
+      <ShopContextProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/all-products" element={<ProductCollections />} />
+            <Route path="/:title" element={<ProductDetails />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Routes>
+        </Router>
+      </ShopContextProvider>
     </>
   );
 }

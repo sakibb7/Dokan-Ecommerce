@@ -30,7 +30,10 @@ const NavLinks = () => {
                         <div>
                           <ul className="">
                             {sublink.map(({ id, name, link }) => (
-                              <li key={id} className="py-3">
+                              <li
+                                key={id}
+                                className="py-3 text-slate-500 hover:text-slate-600"
+                              >
                                 <Link to={link}>{name}</Link>
                               </li>
                             ))}
