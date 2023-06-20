@@ -37,8 +37,8 @@ import reviewBackground3 from "./images/reviewBackground3.png"
 import reviewBackground4 from "./images/reviewBackground4.png"
 import reviewBackground5 from "./images/reviewBackground5.png"
 import reviewBackground6 from "./images/reviewBackground6.png"
-// import invertedComma1 from "./images/invertedComma1.png"
-// import invertedComma2 from "./images/invertedComma2.png"
+import invertedComma1 from "./images/invertedComma1.png"
+import invertedComma2 from "./images/invertedComma2.png"
 
 //social Icons
 import {BsFacebook} from "react-icons/bs"
@@ -85,8 +85,8 @@ export{
     reviewBackground4,
     reviewBackground5,
     reviewBackground6,
-    // invertedComma1,
-    // invertedComma2,
+    invertedComma1,
+    invertedComma2,
     BsFacebook,
     AiFillTwitterCircle,
     AiFillYoutube,
