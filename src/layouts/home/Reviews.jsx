@@ -6,8 +6,8 @@ import {
   reviewBackground4,
   reviewBackground5,
   reviewBackground6,
-  invertedComma1,
-  invertedComma2,
+  // invertedComma1,
+  // invertedComma2,
 } from "../../assets";
 
 const Reviews = () => {
@@ -56,7 +56,7 @@ const Reviews = () => {
             <div className="flex flex-col items-center text-2xl pb-10">
               <p className=" text-center font-[400] tracking-wide relative">
                 {review}
-                <img
+                {/* <img
                   src={invertedComma1}
                   alt=""
                   className="absolute left-[-80px] top-0"
@@ -65,7 +65,7 @@ const Reviews = () => {
                   src={invertedComma2}
                   alt=""
                   className="absolute right-[-80px] top-0"
-                />
+                /> */}
               </p>
               <p className="font-[600] py-6">{name}</p>
               <p>{star}</p>
