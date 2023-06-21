@@ -46,7 +46,7 @@ export const newArrivals =[
 
 export const trendingProduct =[
     {
-        id:101,
+        id:1,
         image:product1,
         title:"Ray Nylon Backpack",
         price:"68.00",
@@ -55,7 +55,7 @@ export const trendingProduct =[
         offer:false,
     },
     {
-        id:102,
+        id:2,
         image:product1,
         title:"Round Buckle Belt",
         price:"68.00",
@@ -66,7 +66,7 @@ export const trendingProduct =[
 
     },
     {
-        id:103,
+        id:3,
         image:product1,
         title:"Waffle Knit Beanie",
         price:"68.00",
@@ -74,7 +74,7 @@ export const trendingProduct =[
         reviews:"88 reviews"
     },
     {
-        id:104,
+        id:4,
         image:product1,
         title:"Travel Pet Carrier",
         price:"68.00",
@@ -85,7 +85,7 @@ export const trendingProduct =[
 
     },
     {
-        id:105,
+        id:5,
         image:product1,
         title:"Leather Gloves",
         price:"68.00",
@@ -94,7 +94,7 @@ export const trendingProduct =[
         offer:false,
     },
     {
-        id:106,
+        id:6,
         image:product1,
         title:"Black Umbrella",
         price:"68.00",
@@ -105,7 +105,7 @@ export const trendingProduct =[
 
     },
     {
-        id:107,
+        id:7,
         image:product1,
         title:"Wool Cashmere Jacket",
         price:"68.00",
@@ -113,7 +113,7 @@ export const trendingProduct =[
         reviews:"88 reviews"
     },
     {
-        id:108,
+        id:8,
         image:product1,
         title:"Jump Rope Kids",
         price:"68.00",

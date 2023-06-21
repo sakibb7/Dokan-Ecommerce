@@ -8,19 +8,22 @@ import {
   Checkout,
 } from "./pages";
 import { ShopContextProvider } from "./context/ShopContext";
+import ScrollToTop from "./components/home/ScrollToTop";
 
 function App() {
   return (
     <>
       <ShopContextProvider>
         <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/all-products" element={<ProductCollections />} />
-            <Route path="/:title" element={<ProductDetails />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout />} />
-          </Routes>
+          <ScrollToTop>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/all-products" element={<ProductCollections />} />
+              <Route path="/:title" element={<ProductDetails />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+            </Routes>
+          </ScrollToTop>
         </Router>
       </ShopContextProvider>
     </>

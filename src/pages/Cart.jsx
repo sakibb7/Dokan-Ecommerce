@@ -5,11 +5,14 @@ import { useContext } from "react";
 import { trendingProduct } from "../data/productData";
 import { ShopContext } from "../context/ShopContext";
 import CartItems from "../components/home/CartItems";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
 
   const totalAmount = getTotalCartAmount();
+
+  console.log(totalAmount);
 
   return (
     <div>
@@ -50,9 +53,11 @@ const Cart = () => {
                 </p>
                 <p className="text-slate-800 font-[600] text-base">$276.45</p>
               </div>
-              <button className="bg-slate-800 text-lg font-[500] text-white rounded-full py-3">
-                Checkout
-              </button>
+              <Link to="/checkout">
+                <button className="bg-slate-800 text-lg font-[500] text-white rounded-full py-3 w-full">
+                  Checkout
+                </button>
+              </Link>
               <p className="text-slate-500 text-sm text-center font-[400]">
                 Learn more{" "}
                 <span className="text-slate-800 font-[600]">

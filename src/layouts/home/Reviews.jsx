@@ -6,8 +6,8 @@ import {
   reviewBackground4,
   reviewBackground5,
   reviewBackground6,
-  invertedComma1,
-  invertedComma2,
+  quoteLeft,
+  quoteRight,
 } from "../../assets";
 
 const Reviews = () => {
@@ -56,15 +56,16 @@ const Reviews = () => {
             <div className="flex flex-col items-center text-2xl pb-10">
               <p className=" text-center font-[400] tracking-wide relative">
                 {review}
+
                 <img
-                  src={invertedComma1}
+                  src={quoteLeft}
                   alt=""
-                  className="absolute left-[-80px] top-0"
+                  className="absolute left-[-80px] top-0 w-16"
                 />
                 <img
-                  src={invertedComma2}
+                  src={quoteRight}
                   alt=""
-                  className="absolute right-[-80px] top-0"
+                  className="absolute right-[-80px] top-0 w-16"
                 />
               </p>
               <p className="font-[600] py-6">{name}</p>

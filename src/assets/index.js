@@ -37,8 +37,6 @@ import reviewBackground3 from "./images/reviewBackground3.png"
 import reviewBackground4 from "./images/reviewBackground4.png"
 import reviewBackground5 from "./images/reviewBackground5.png"
 import reviewBackground6 from "./images/reviewBackground6.png"
-import invertedComma1 from "./images/invertedComma1.png"
-import invertedComma2 from "./images/invertedComma2.png"
 
 //social Icons
 import {BsFacebook} from "react-icons/bs"
@@ -51,6 +49,10 @@ import {FaInstagramSquare} from "react-icons/fa"
 import productImage1 from "./images/products/productImage1.jpg"
 import productImage2 from "./images/products/productImage2.jpg"
 import productImage3 from "./images/products/productImage3.jpg"
+
+//svg
+import quoteLeft from "./icons/quoteLeft.svg"
+import quoteRight from "./icons/quoteRight.svg"
 
 export{
     IoBagHandle,
@@ -85,8 +87,6 @@ export{
     reviewBackground4,
     reviewBackground5,
     reviewBackground6,
-    invertedComma1,
-    invertedComma2,
     BsFacebook,
     AiFillTwitterCircle,
     AiFillYoutube,
@@ -94,4 +94,6 @@ export{
     productImage1,
     productImage2,
     productImage3,
+    quoteLeft,
+    quoteRight,
 }

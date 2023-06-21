@@ -1,4 +1,8 @@
 import { useState, useEffect, useContext } from "react";
+import { useParams, Link } from "react-router-dom";
+import { trendingProduct } from "../data/productData";
+import { ShopContext } from "../context/ShopContext";
+
 import Navbar from "../layouts/global/Navbar";
 import SpecialOffer from "../layouts/home/SpecialOffer";
 import Footer from "../layouts/global/Footer";
@@ -9,14 +13,11 @@ import {
   AiFillStar,
   IoBagHandle,
 } from "../assets";
-import { useParams } from "react-router-dom";
-import { trendingProduct } from "../data/productData";
-import { ShopContext } from "../context/ShopContext";
-import { Link } from "react-router-dom";
 
 const ProductDetails = () => {
   const { addToCart, cartItems, removeFromCart, updateCartItemCount } =
     useContext(ShopContext);
+
   const { title } = useParams();
   const [bodyData, setBodyData] = useState("");
 
@@ -27,8 +28,6 @@ const ProductDetails = () => {
 
     setBodyData(productData[0]);
   }, []);
-
-  console.log(cartItems[bodyData.id]);
 
   return (
     <div>
