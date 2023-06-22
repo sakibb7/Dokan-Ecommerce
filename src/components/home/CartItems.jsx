@@ -6,7 +6,7 @@ const CartItems = (props) => {
   const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
     useContext(ShopContext);
   return (
-    <div className="flex justify-between items-top gap-8 border-b pb-10">
+    <div className="flex justify-between items-top gap-8 border-b pb-10 mb-10">
       <img src={image} alt="" className="bg-slate-100 h-36 rounded-lg" />
       <div>
         <h2 className="test-slate-800 font-[600] text-lg">{title}</h2>

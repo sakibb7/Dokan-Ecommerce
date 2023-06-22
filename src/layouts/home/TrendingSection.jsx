@@ -1,8 +1,11 @@
-import { trendingProduct } from "../../data/productData";
 import SingleProduct from "../../components/home/SingleProduct";
 import SortingCard from "../../components/home/SortingCard";
+import { products } from "../../data/productData";
 
 const TrendingSection = () => {
+  const trendingProducts = products.filter(
+    (product) => product.trending === true
+  );
   return (
     <section className="max-w-screen-xl mx-auto pt-40">
       <div>
@@ -13,13 +16,12 @@ const TrendingSection = () => {
       </div>
       <SortingCard />
       <div className="py-10 grid grid-cols-4 gap-8">
-        {trendingProduct.map(
-          ({ id, image, title, shortDesc, price, rating, reviews }) => (
+        {trendingProducts.map(
+          ({ id, image, title, price, rating, reviews }) => (
             <div className="" key={id}>
               <SingleProduct
                 image={image}
                 title={title}
-                shortDesc={shortDesc}
                 price={price}
                 rating={rating}
                 reviews={reviews}

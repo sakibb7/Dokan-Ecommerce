@@ -143,6 +143,10 @@ export const products =[
         rating:"4.3",
         reviews:"68 reviews",
         offer:false,
+        offerDetails:'50% off',
+        category:"Men",
+        newArrival:true,
+        trending:false,
     },
     {
         id:2,
@@ -151,8 +155,11 @@ export const products =[
         price:"68.00",
         rating:"4.9",
         reviews:"12 reviews",
-        offer:true,
-        offerType:"limited edition"
+        offer:false,
+        offerDetails:'50% off',
+        category:"Men",
+        newArrival:true,
+        trending:false,
 
     },
     {
@@ -161,7 +168,12 @@ export const products =[
         title:"Waffle Knit Beanie",
         price:"68.00",
         rating:"4.7",
-        reviews:"97 reviews"
+        reviews:"97 reviews",
+        offer:false,
+        offerDetails:'50% off',
+        category:"Men",
+        newArrival:true,
+        trending:true,
     },
     {
         id:4,
@@ -170,8 +182,11 @@ export const products =[
         price:"68.00",
         rating:"4.6",
         reviews:"56 reviews",
-        offer:true,
-        offerType:"50% discount"
+        offer:false,
+        offerDetails:'50% off',
+        category:"Men",
+        newArrival:true,
+        trending:true,
 
     },
     {
@@ -182,6 +197,10 @@ export const products =[
         rating:"4.1",
         reviews:"114 reviews",
         offer:false,
+        offerDetails:'50% off',
+        category:"Men",
+        newArrival:false,
+        trending:true,
     },
     {
         id:6,
@@ -190,8 +209,11 @@ export const products =[
         price:"68.00",
         rating:"4.8",
         reviews:"95 reviews",
-        offer:true,
-        offerType:"limited edition"
+        offer:false,
+        offerDetails:'50% off',
+        category:"Men",
+        newArrival:false,
+        trending:true,
 
     },
     {
@@ -200,7 +222,12 @@ export const products =[
         title:"Wool Cashmere Jacket",
         price:"68.00",
         rating:"4.3",
-        reviews:"72 reviews"
+        reviews:"72 reviews",
+        offer:false,
+        offerDetails:'50% off',
+        category:"Men",
+        newArrival:false,
+        trending:true,
     },
     {
         id:8,
@@ -209,8 +236,11 @@ export const products =[
         price:"68.00",
         rating:"4.4",
         reviews:"80 reviews",
-        offer:true,
-        offerType:"50% discount"
+        offer:false,
+        offerDetails:'50% off',
+        category:"Men",
+        newArrival:false,
+        trending:true,
 
     },
     {
@@ -219,7 +249,12 @@ export const products =[
         title:"Wool Cashmere Jacket",
         price:"68.00",
         rating:"4.3",
-        reviews:"72 reviews"
+        reviews:"72 reviews",
+        offer:false,
+        offerDetails:'50% off',
+        category:"Men",
+        newArrival:false,
+        trending:true,
     },
     {
         id:8,
@@ -228,8 +263,11 @@ export const products =[
         price:"68.00",
         rating:"4.4",
         reviews:"80 reviews",
-        offer:true,
-        offerType:"50% discount"
+        offer:false,
+        offerDetails:'50% off',
+        category:"Men",
+        newArrival:false,
+        trending:true,
 
     },
 ]
