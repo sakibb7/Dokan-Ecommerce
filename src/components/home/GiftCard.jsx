@@ -1,12 +1,12 @@
-const GiftCard = ({ title, headingFirst, headingSecond, image }) => {
+const GiftCard = ({ title, heading, image }) => {
   return (
-    <div className={`flex justify-between items-center p-8`}>
+    <div className={`flex justify-between items-center px-8 pt-10 pb-4`}>
       <div>
         <h3 className="">{title}</h3>
-        <h2 className="text-2xl font-[600] text-gray-900 py-4">
-          {headingFirst} <br /> {headingSecond}
+        <h2 className="text-2xl font-[600] text-gray-900 py-6 w-[90%]">
+          {heading}
         </h2>
-        <button className="text-sm bg-white text-gray-600 mt-2 py-2 px-5 rounded-full drop-shadow-xl">
+        <button className="text-sm bg-white text-gray-600 mt-2 py-3 px-5 mt-4 rounded-full drop-shadow-xl ">
           Show me all
         </button>
       </div>

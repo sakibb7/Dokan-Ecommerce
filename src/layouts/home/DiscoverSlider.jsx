@@ -16,24 +16,21 @@ const DiscoverSlider = () => {
           <div className="bg-orange-300 rounded-[15px]">
             <GiftCard
               title="Explore new arrivals"
-              headingFirst="Shop the latest"
-              headingSecond="from top brands"
+              heading="Shop the latest from top brands"
               image={dog}
             />
           </div>
           <div className="bg-green-300 rounded-[15px]">
             <GiftCard
               title="Digital gift cards"
-              headingFirst="Give the gift"
-              headingSecond="of choice"
+              heading="Give the gift of choice"
               image={dog}
             />
           </div>
           <div className="bg-cyan-300 rounded-[15px]">
             <GiftCard
               title="Sale collection"
-              headingFirst="Up to"
-              headingSecond="80% off retail"
+              heading="Up to 80% off retail"
               image={dog}
             />
           </div>

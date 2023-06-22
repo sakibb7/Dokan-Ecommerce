@@ -3,6 +3,7 @@ import { trendingProduct } from "../data/productData";
 import SingleProduct from "../components/home/SingleProduct";
 import EarnMoney from "../layouts/home/EarnMoney";
 import Footer from "../layouts/global/Footer";
+import SortingCard from "../components/home/SortingCard";
 
 const ProductCollections = () => {
   return (
@@ -18,7 +19,7 @@ const ProductCollections = () => {
             easy for you to share your designs with more like-minded people.
           </p>
         </div>
-
+        <SortingCard />
         <div className="border-b">
           <div className="py-10 grid grid-cols-4 gap-8">
             {trendingProduct.map(

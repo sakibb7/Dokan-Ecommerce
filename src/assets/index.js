@@ -23,8 +23,6 @@ import {GiGoldBar} from "react-icons/gi"
 // Images
 import dog from "./images/dog.png"
 import sliderPic1 from "./images/slider/pic1.png"
-import product1 from "./images/products/product1.png"
-import stepImage from "./images/stepsImage.png"
 import earnMoney from "./images/moneyImage.png"
 import sectionImage from "./images/sectionImage.png"
 import boy from "./images/boyImage.png"
@@ -44,8 +42,25 @@ import {AiFillTwitterCircle} from "react-icons/ai"
 import {AiFillYoutube} from "react-icons/ai"
 import {FaInstagramSquare} from "react-icons/fa"
 
+// product Image
+import product1 from "./images/products/product1.png"
+import product2 from "./images/products/product2.png"
+import product3 from "./images/products/product3.png"
+import product4 from "./images/products/product4.png"
+import product5 from "./images/products/product5.png"
+import product6 from "./images/products/product6.png"
+import product7 from "./images/products/product7.png"
+import product8 from "./images/products/product8.png"
+import product9 from "./images/products/product9.png"
+import product10 from "./images/products/product10.png"
 
-//product image
+// steps images
+import step1 from "./images/step1.png"
+import step2 from "./images/step2.png"
+import step3 from "./images/step3.png"
+import step4 from "./images/step4.png"
+
+//product images for description page
 import productImage1 from "./images/products/productImage1.jpg"
 import productImage2 from "./images/products/productImage2.jpg"
 import productImage3 from "./images/products/productImage3.jpg"
@@ -66,11 +81,23 @@ export{
     HiOutlineArrowLeft,
     AiOutlineHeart,
     product1,
+    product2,
+    product3,
+    product4,
+    product5,
+    product6,
+    product7,
+    product8,
+    product9,
+    product10,
     AiFillStar,
     HiOutlineReceiptPercent,
     BsBagCheckFill,
     MdZoomOutMap,
-    stepImage,
+    step1,
+    step2,
+    step3,
+    step4,
     earnMoney,
     RiWomenLine,
     AiOutlineMan,

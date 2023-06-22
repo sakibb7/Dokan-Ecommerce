@@ -1,6 +1,6 @@
-import { sectionMenu } from "../../data/menuItems";
 import { trendingProduct } from "../../data/productData";
 import SingleProduct from "../../components/home/SingleProduct";
+import SortingCard from "../../components/home/SortingCard";
 
 const TrendingSection = () => {
   return (
@@ -11,25 +11,7 @@ const TrendingSection = () => {
           Discover the most trending products in Dokan
         </p>
       </div>
-      <div className="flex justify-between items-center text-white text-[17px] font-[500] py-10 border-b">
-        <div className="flex justiy-center items-center gap-12">
-          <button className="bg-slate-900 px-5 rounded-full py-2">
-            All Items
-          </button>
-          <div className="flex justify-center items-center gap-14">
-            {sectionMenu.map(({ id, name }) => (
-              <button key={id} className="text-slate-500">
-                {name}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div>
-          <button className="bg-slate-900 px-8 rounded-full py-2">
-            Filter
-          </button>
-        </div>
-      </div>
+      <SortingCard />
       <div className="py-10 grid grid-cols-4 gap-8">
         {trendingProduct.map(
           ({ id, image, title, shortDesc, price, rating, reviews }) => (
