@@ -2,7 +2,7 @@ import Navabar from "../layouts/global/Navbar";
 import Footer from "../layouts/global/Footer";
 import { useContext } from "react";
 import { ShopContext } from "../context/ShopContext";
-import { trendingProduct } from "../data/productData";
+import { products } from "../data/productData";
 
 const Checkout = () => {
   const {
@@ -14,6 +14,11 @@ const Checkout = () => {
   } = useContext(ShopContext);
 
   const totalAmount = getTotalCartAmount();
+
+  const shippingCharge = 5;
+  const taxEstimate = totalAmount * 0.2;
+  const orderTotal = totalAmount + taxEstimate + shippingCharge;
+
   return (
     <div>
       <Navabar />
@@ -159,15 +164,12 @@ const Checkout = () => {
           </div>
           <div className="w-[35%] py-10">
             <p className="text-slate-800 font-[600] text-xl">Order summary</p>
-            <div className="flex justify-between items-top gap-8 border-b py-10">
-              {trendingProduct.map(({ id, title, image, price }) => {
+            <div className="flex flex-col justify-between items-top gap-8 border-b py-10">
+              {products.map(({ id, title, image, price }) => {
                 if (cartItems[id] > 0) {
                   return (
-                    <>
-                      <div
-                        className="flex justify-start items-top gap-8"
-                        key={id}
-                      >
+                    <div key={id} className="flex justify-between">
+                      <div className="flex justify-start items-top gap-8">
                         <img
                           src={image}
                           alt=""
@@ -210,11 +212,14 @@ const Checkout = () => {
                         <p className="border-2 border-green-500 text-green-500 font-[500] px-3 rounded-lg">
                           ${price}
                         </p>
-                        <button className="text-blue-600 font-[500] text-sm">
+                        <button
+                          className="text-blue-600 font-[500] text-sm"
+                          onClick={() => removeFromCart(id)}
+                        >
                           Remove
                         </button>
                       </div>
-                    </>
+                    </div>
                   );
                 }
               })}
@@ -237,17 +242,21 @@ const Checkout = () => {
                 </div>
                 <div className="text-slate-500 text-sm flex justify-between items-center border-b pb-4">
                   <p>Shipping estimate</p>
-                  <p className="text-slate-800 font-[600]">$5.00</p>
+                  <p className="text-slate-800 font-[600]">${shippingCharge}</p>
                 </div>
                 <div className="text-slate-500 text-sm flex justify-between items-center border-b pb-4">
-                  <p>subtotal</p>
-                  <p className="text-slate-800 font-[600]">$24.45</p>
+                  <p>Tax estimate</p>
+                  <p className="text-slate-800 font-[600]">
+                    ${taxEstimate.toFixed(2)}
+                  </p>
                 </div>
                 <div className="text-slate-500 text-sm flex justify-between items-center pb-4">
                   <p className="text-base text-slate-800 font-[600]">
                     Order total
                   </p>
-                  <p className="text-slate-800 font-[600] text-base">$276.45</p>
+                  <p className="text-slate-800 font-[600] text-base">
+                    ${orderTotal}
+                  </p>
                 </div>
                 <button className="bg-slate-800 text-lg font-[500] text-white rounded-full py-3">
                   Confirm order

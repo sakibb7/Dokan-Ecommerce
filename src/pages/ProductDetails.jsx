@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
-import { trendingProduct } from "../data/productData";
+import { products } from "../data/productData";
 import { ShopContext } from "../context/ShopContext";
 
 import Navbar from "../layouts/global/Navbar";
@@ -22,9 +22,7 @@ const ProductDetails = () => {
   const [bodyData, setBodyData] = useState("");
 
   useEffect(() => {
-    const productData = trendingProduct.filter(
-      (product) => product.title === title
-    );
+    const productData = products.filter((product) => product.title === title);
 
     setBodyData(productData[0]);
   }, []);

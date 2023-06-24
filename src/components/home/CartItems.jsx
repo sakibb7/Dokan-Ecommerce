@@ -41,7 +41,12 @@ const CartItems = (props) => {
         <p className="border-2 border-green-500 text-green-500 font-[500] px-3 rounded-lg">
           ${price}
         </p>
-        <button className="text-blue-600 font-[500] text-sm">Remove</button>
+        <button
+          className="text-blue-600 font-[500] text-sm"
+          onClick={() => removeFromCart(id)}
+        >
+          Remove
+        </button>
       </div>
     </div>
   );

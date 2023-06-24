@@ -2,7 +2,7 @@ import Footer from "../layouts/global/Footer";
 import Navabar from "../layouts/global/Navbar";
 import SpecialOffer from "../layouts/home/SpecialOffer";
 import { useContext } from "react";
-import { trendingProduct } from "../data/productData";
+import { products } from "../data/productData";
 import { ShopContext } from "../context/ShopContext";
 import CartItems from "../components/home/CartItems";
 import { Link } from "react-router-dom";
@@ -12,7 +12,9 @@ const Cart = () => {
 
   const totalAmount = getTotalCartAmount();
 
-  console.log(totalAmount);
+  const shippingCharge = 5;
+  const taxEstimate = totalAmount * 0.2;
+  const orderTotal = totalAmount + taxEstimate + shippingCharge;
 
   return (
     <div>
@@ -26,9 +28,9 @@ const Cart = () => {
         </div>
         <div className="flex justify-start w-full items-top py-10 ">
           <div className="w-2/3  border-r pr-10">
-            {trendingProduct.map((product) => {
+            {products.map((product) => {
               if (cartItems[product.id] > 0) {
-                return <CartItems data={product} key={trendingProduct.id} />;
+                return <CartItems data={product} key={products.id} />;
               }
             })}
           </div>
@@ -41,17 +43,23 @@ const Cart = () => {
               </div>
               <div className="text-slate-500 text-sm flex justify-between items-center border-b pb-4">
                 <p>Shipping estimate</p>
-                <p className="text-slate-800 font-[600]">$5.00</p>
+                <p className="text-slate-800 font-[600]">
+                  ${shippingCharge}.00
+                </p>
               </div>
               <div className="text-slate-500 text-sm flex justify-between items-center border-b pb-4">
-                <p>subtotal</p>
-                <p className="text-slate-800 font-[600]">$24.45</p>
+                <p>Tax estimate</p>
+                <p className="text-slate-800 font-[600]">
+                  ${taxEstimate.toFixed(2)}
+                </p>
               </div>
               <div className="text-slate-500 text-sm flex justify-between items-center pb-4">
                 <p className="text-base text-slate-800 font-[600]">
                   Order total
                 </p>
-                <p className="text-slate-800 font-[600] text-base">$276.45</p>
+                <p className="text-slate-800 font-[600] text-base">
+                  ${orderTotal}
+                </p>
               </div>
               <Link to="/checkout">
                 <button className="bg-slate-800 text-lg font-[500] text-white rounded-full py-3 w-full">

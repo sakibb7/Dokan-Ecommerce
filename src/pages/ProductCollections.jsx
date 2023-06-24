@@ -1,5 +1,5 @@
 import Navbar from "../layouts/global/Navbar";
-import { trendingProduct } from "../data/productData";
+import { products } from "../data/productData";
 import SingleProduct from "../components/home/SingleProduct";
 import EarnMoney from "../layouts/home/EarnMoney";
 import Footer from "../layouts/global/Footer";
@@ -22,7 +22,7 @@ const ProductCollections = () => {
         <SortingCard />
         <div className="border-b">
           <div className="py-10 grid grid-cols-4 gap-8">
-            {trendingProduct.map(
+            {products.map(
               ({ id, image, title, shortDesc, price, rating, reviews }) => (
                 <div className="" key={id}>
                   <SingleProduct

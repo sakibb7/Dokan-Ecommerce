@@ -1,17 +1,22 @@
-// Icons
-
+//Menubar Section Icons
 import { IoBagHandle } from "react-icons/io5";
 import {CiSearch} from "react-icons/ci"
 import {AiOutlineUser} from "react-icons/ai"
 import {IoCartOutline} from "react-icons/io5"
 import {MdOutlineKeyboardArrowDown} from "react-icons/md"
+
+//Slider Section Icons
 import {HiOutlineArrowRight} from "react-icons/hi"
 import {HiOutlineArrowLeft} from "react-icons/hi"
+
+//Product Section Icons
 import {AiOutlineHeart} from "react-icons/ai"
 import {AiFillStar} from "react-icons/ai"
 import {HiOutlineReceiptPercent} from "react-icons/hi2"
 import {BsBagCheckFill} from "react-icons/bs"
 import {MdZoomOutMap} from "react-icons/md"
+
+//Product Section Soting Menu Icons
 import {RiWomenLine} from "react-icons/ri"
 import {AiOutlineMan} from "react-icons/ai"
 import {TbMoodKid} from "react-icons/tb"
@@ -19,8 +24,14 @@ import {MdSportsBasketball} from "react-icons/md"
 import {AiOutlineCrown} from "react-icons/ai"
 import {GiGoldBar} from "react-icons/gi"
 
+//social Icons
+import {BsFacebook} from "react-icons/bs"
+import {AiFillTwitterCircle} from "react-icons/ai"
+import {AiFillYoutube} from "react-icons/ai"
+import {FaInstagramSquare} from "react-icons/fa"
 
-// Images
+
+// Images Used In components
 import dog from "./images/dog.png"
 import sliderPic1 from "./images/slider/pic1.png"
 import earnMoney from "./images/moneyImage.png"
@@ -35,12 +46,6 @@ import reviewBackground3 from "./images/reviewBackground3.png"
 import reviewBackground4 from "./images/reviewBackground4.png"
 import reviewBackground5 from "./images/reviewBackground5.png"
 import reviewBackground6 from "./images/reviewBackground6.png"
-
-//social Icons
-import {BsFacebook} from "react-icons/bs"
-import {AiFillTwitterCircle} from "react-icons/ai"
-import {AiFillYoutube} from "react-icons/ai"
-import {FaInstagramSquare} from "react-icons/fa"
 
 // product Image
 import product1 from "./images/products/product1.png"
@@ -75,11 +80,25 @@ export{
     AiOutlineUser,
     IoCartOutline,
     MdOutlineKeyboardArrowDown,
-    dog,
-    sliderPic1,
     HiOutlineArrowRight,
     HiOutlineArrowLeft,
     AiOutlineHeart,
+    AiFillStar,
+    HiOutlineReceiptPercent,
+    BsBagCheckFill,
+    MdZoomOutMap,
+    RiWomenLine,
+    AiOutlineMan,
+    TbMoodKid,
+    MdSportsBasketball,
+    AiOutlineCrown,
+    GiGoldBar,
+    BsFacebook,
+    AiFillTwitterCircle,
+    AiFillYoutube,
+    FaInstagramSquare,
+    dog,
+    sliderPic1,
     product1,
     product2,
     product3,
@@ -90,21 +109,11 @@ export{
     product8,
     product9,
     product10,
-    AiFillStar,
-    HiOutlineReceiptPercent,
-    BsBagCheckFill,
-    MdZoomOutMap,
     step1,
     step2,
     step3,
     step4,
     earnMoney,
-    RiWomenLine,
-    AiOutlineMan,
-    TbMoodKid,
-    MdSportsBasketball,
-    AiOutlineCrown,
-    GiGoldBar,
     sectionImage,
     boy,
     reviewPeople,
@@ -114,10 +123,6 @@ export{
     reviewBackground4,
     reviewBackground5,
     reviewBackground6,
-    BsFacebook,
-    AiFillTwitterCircle,
-    AiFillYoutube,
-    FaInstagramSquare,
     productImage1,
     productImage2,
     productImage3,
