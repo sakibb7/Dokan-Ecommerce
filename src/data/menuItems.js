@@ -40,18 +40,18 @@ export const mainMenu =[
                 sublink:[
                     {
                         id:101,
-                        name:"Home Page 1",
-                        link:"/"
+                        name:"Cart",
+                        link:"/cart"
                     },
                     {
                         id:102,
-                        name:"Home Page 2",
-                        link:"/"
+                        name:"Checkout",
+                        link:"/checkout"
                     },
                     {
                         id:103,
-                        name:"Header 1",
-                        link:"/"
+                        name:"All Products",
+                        link:"/all-products"
                     },
                     {
                         id:104,
@@ -72,18 +72,18 @@ export const mainMenu =[
                 sublink:[
                     {
                         id:101,
-                        name:"Home Page 1",
-                        link:"/"
+                        name:"Cart",
+                        link:"/cart"
                     },
                     {
                         id:102,
-                        name:"Home Page 2",
-                        link:"/"
+                        name:"Checkout",
+                        link:"/checkout"
                     },
                     {
                         id:103,
-                        name:"Header 1",
-                        link:"/"
+                        name:"All Products",
+                        link:"/all-products"
                     },
                     {
                         id:104,
@@ -134,18 +134,18 @@ export const mainMenu =[
                 sublink:[
                     {
                         id:101,
-                        name:"Home Page 1",
-                        link:"/"
+                        name:"Cart",
+                        link:"/cart"
                     },
                     {
                         id:102,
-                        name:"Home Page 2",
-                        link:"/"
+                        name:"Checkout",
+                        link:"/checkout"
                     },
                     {
                         id:103,
-                        name:"Header 1",
-                        link:"/"
+                        name:"All Products",
+                        link:"/all-products"
                     },
                     {
                         id:104,
