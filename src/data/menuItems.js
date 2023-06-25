@@ -3,7 +3,8 @@ import {RiWomenLine,
     TbMoodKid,
     MdSportsBasketball,
     AiOutlineCrown,
-    GiGoldBar} from "../assets"
+    // GiGoldBar
+} from "../assets"
 
 
 
@@ -171,33 +172,28 @@ export const mainMenu =[
 
 export const sectionMenu = [
     {
-        id:101,
+        id:'men',
         name:"Men",
         icon:{AiOutlineMan},
     },
     {
-        id:102,
+        id:'women',
         name:"Women",
         icon:{RiWomenLine},
     },
     {
-        id:103,
+        id:'kids',
         name:"Kids",
         icon:{TbMoodKid},
     },
     {
-        id:104,
+        id:'sports',
         name:"Sports",
         icon:{MdSportsBasketball},
     },
     {
-        id:105,
+        id:'beauty',
         name:"Beauty",
         icon:{AiOutlineCrown},
-    },
-    {
-        id:106,
-        name:"Jewelry",
-        icon:{GiGoldBar},
-    },
+    }
 ]
