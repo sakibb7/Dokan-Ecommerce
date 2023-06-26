@@ -41,15 +41,15 @@ const ProductDetails = () => {
             <img src={productImage2} alt="" className="rounded-[20px]" />
             <img src={productImage3} alt="" className="rounded-[20px]" />
           </div>
-          <div className="flex flex-col pt-10">
+          <div className="flexCol pt-10">
             <h1 className="text-3xl font-[600] text-slate-800">
               {bodyData.title}
             </h1>
-            <div className="flex justify-start items-center py-4">
+            <div className="flexStart py-4">
               <p className="border-2 border-green-500 text-green-500 font-[600] px-3 rounded-lg text-lg">
                 ${bodyData.price}
               </p>
-              <p className="flex justify-center items-center border-l-2 pl-4 ml-4 py-1 font-[500]">
+              <p className="flexCenter border-l-2 pl-4 ml-4 py-1 font-[500]">
                 <AiFillStar style={{ color: "#facc15" }} size={20} />
                 <span className="pl-1"> {bodyData.rating}</span>
               </p>
@@ -67,7 +67,7 @@ const ProductDetails = () => {
               <p>
                 Size: <span className="font-[500]">XS</span>
               </p>
-              <div className="flex justify-start items-center gap-4 py-4">
+              <div className="flexStart gap-4 py-4">
                 <button className="border rounded-lg text-lg font-[500] px-4 py-2">
                   XS
                 </button>
@@ -86,7 +86,7 @@ const ProductDetails = () => {
               </div>
             </div>
 
-            <div className="flex justify-between items-center gap-4 border-b pb-8">
+            <div className="flexBetween gap-4 border-b pb-8">
               <div className="bg-slate-50 py-3 px-4 rounded-full">
                 <button
                   className="text-slate-500 font-[400] text-2xl border rounded-full px-3 py-0.5 cursor-pointer"
@@ -108,7 +108,7 @@ const ProductDetails = () => {
                   +
                 </button>
               </div>
-              <div className="bg-slate-800 text-slate-50 px-32 py-4 flex flex-center items-center gap-2 font-[500] text-md rounded-full">
+              <div className="bg-slate-800 text-slate-50 px-32 py-4 flexCenter gap-2 font-[500] text-md rounded-full">
                 <IoBagHandle />{" "}
                 <Link to="/cart">
                   <button>Add to cart</button>
@@ -122,7 +122,7 @@ const ProductDetails = () => {
           <h2 className="text-2xl text-slate-900 font-[600] py-10">
             Product Details
           </h2>
-          <div className="flex flex-col gap-4 text-slate-700">
+          <div className="flexCol gap-4 text-slate-700">
             <p>
               The patented eighteen-inch hardwood Arrowhead deck --- finely
               mortised in, makes this the strongest and most rigid canoe ever
@@ -135,7 +135,7 @@ const ProductDetails = () => {
               from 1900 to 1914. Manufacturing of the classic wooden canoes in
               Valley Park, Missouri ceased in 1978.
             </p>
-            <ul className="flex flex-col gap-4">
+            <ul className="flexCol gap-4">
               <li>Regular fit, mid-weight t-shirt</li>
               <li>Natural color, 100% premium combed organic cotton</li>
               <li>

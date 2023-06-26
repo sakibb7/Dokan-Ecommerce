@@ -13,17 +13,20 @@ const NewArrivals = () => {
         />
       </div>
       <div className="py-10 grid grid-cols-4 gap-8">
-        {newArrival.map(({ id, image, title, price, rating, reviews }) => (
-          <div className="" key={id}>
-            <SingleProduct
-              image={image}
-              title={title}
-              price={price}
-              rating={rating}
-              reviews={reviews}
-            />
-          </div>
-        ))}
+        {newArrival.map(
+          ({ id, image, title, price, rating, reviews, offerDetails }) => (
+            <div className="" key={id}>
+              <SingleProduct
+                image={image}
+                title={title}
+                price={price}
+                rating={rating}
+                reviews={reviews}
+                offerDetails={offerDetails}
+              />
+            </div>
+          )
+        )}
       </div>
     </div>
   );

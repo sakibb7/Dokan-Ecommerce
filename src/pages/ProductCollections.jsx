@@ -77,6 +77,7 @@ const ProductCollections = () => {
                         price,
                         rating,
                         reviews,
+                        wishlist,
                       }) => (
                         <div className="" key={id}>
                           <SingleProduct
@@ -86,6 +87,7 @@ const ProductCollections = () => {
                             price={price}
                             rating={rating}
                             reviews={reviews}
+                            wishlist={wishlist}
                           />
                         </div>
                       )
@@ -102,7 +104,17 @@ const ProductCollections = () => {
             ) : (
               <div className="grid grid-cols-4 gap-8">
                 {products.map(
-                  ({ id, image, title, shortDesc, price, rating, reviews }) => (
+                  ({
+                    id,
+                    image,
+                    title,
+                    shortDesc,
+                    price,
+                    rating,
+                    reviews,
+                    wishlist,
+                    offerDetails,
+                  }) => (
                     <div className="" key={id}>
                       <SingleProduct
                         image={image}
@@ -111,6 +123,8 @@ const ProductCollections = () => {
                         price={price}
                         rating={rating}
                         reviews={reviews}
+                        wishlist={wishlist}
+                        offerDetails={offerDetails}
                       />
                     </div>
                   )

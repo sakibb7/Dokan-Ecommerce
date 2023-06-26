@@ -6,11 +6,11 @@ const CartItems = (props) => {
   const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
     useContext(ShopContext);
   return (
-    <div className="flex justify-between items-top gap-8 border-b pb-10 mb-10">
+    <div className="flexBetween gap-8 border-b pb-10 mb-10">
       <img src={image} alt="" className="bg-slate-100 h-36 rounded-lg" />
       <div>
         <h2 className="test-slate-800 font-[600] text-lg">{title}</h2>
-        <div className="flex justify-start items-center gap-4 text-slate-600 text-sm font-[500] py-3">
+        <div className="flexStart gap-4 text-slate-600 text-sm font-[500] py-3">
           <p className="border-r pr-4">Black</p>
           <p>2xl</p>
         </div>
@@ -37,7 +37,7 @@ const CartItems = (props) => {
           +
         </button>
       </div>
-      <div className="flex flex-col justify-between items-center">
+      <div className="flexCol gap-20">
         <p className="border-2 border-green-500 text-green-500 font-[500] px-3 rounded-lg">
           ${price}
         </p>

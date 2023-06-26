@@ -12,7 +12,7 @@ import {
 
 const Reviews = () => {
   return (
-    <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-8 py-20 relative mb-20">
+    <div className="max-w-screen-xl mx-auto flexCol items-center gap-8 py-20 relative mb-20">
       <img
         src={reviewBackground1}
         className="absolute top-1/3 left-48"
@@ -44,16 +44,18 @@ const Reviews = () => {
         alt=""
       />
       <div>
-        <h1 className="font-[600] text-4xl pb-4">Good news from far away 🥇</h1>
+        <h1 className="headingThree text-slate-800 pb-4">
+          Good news from far away 🥇
+        </h1>
         <p className="text-gray-600 text-xl text-center">
           Let&apos;s see what people think of Dokan
         </p>
       </div>
       <div className=" w-1/2">
         {reviews.map(({ id, review, image, name, star }) => (
-          <div key={id} className="flex flex-col items-center gap-8">
+          <div key={id} className="flexCol items-center gap-8">
             <img src={image} className="py-6" />
-            <div className="flex flex-col items-center text-2xl pb-10">
+            <div className="flexCol items-center text-2xl pb-10">
               <p className=" text-center font-[400] tracking-wide relative">
                 {review}
 

@@ -3,7 +3,7 @@ import { HiOutlineArrowRight, sectionImage } from "../../assets";
 const ExploreProductsCard = () => {
   return (
     <div className="bg-white rounded-[20px] p-8 cursor-pointer relative">
-      <div className="flex justify-between items-center ">
+      <div className="flexBetween ">
         <img
           src={sectionImage}
           alt=""
@@ -15,9 +15,7 @@ const ExploreProductsCard = () => {
         <p className="text-sm text-slate-400 font-[500] tracking-wide">
           Manufacturar
         </p>
-        <h1 className="text-3xl font-[600] text-slate-800 pb-14">
-          Recycled Blanket
-        </h1>
+        <h1 className="headingFour text-slate-800 pb-14">Recycled Blanket</h1>
         <div className="absolute bottom-0 right-0">
           <svg
             width="250"
@@ -53,7 +51,7 @@ const ExploreProductsCard = () => {
             </defs>
           </svg>
         </div>
-        <button className="flex flex-center items-center gap-2 font-[500] text-sm text-slate-700">
+        <button className="flexCenter gap-2 font-[500] text-sm text-slate-700">
           <span>See Collection</span>
           <HiOutlineArrowRight />
         </button>

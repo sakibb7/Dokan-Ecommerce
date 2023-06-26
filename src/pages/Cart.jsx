@@ -12,7 +12,7 @@ const Cart = () => {
 
   const totalAmount = getTotalCartAmount();
 
-  const shippingCharge = 5;
+  const shippingCharge = totalAmount > 0 ? 5 : 0;
   const taxEstimate = totalAmount * 0.2;
   const orderTotal = totalAmount + taxEstimate + shippingCharge;
 
@@ -20,13 +20,13 @@ const Cart = () => {
     <div>
       <Navabar />
       <div className="max-w-screen-xl mx-auto py-20">
-        <div className="border-b pb-16">
+        <div className="border-b pb-16 mb-10">
           <h1 className="font-[600] text-4xl text-slate-800">Shopping Cart</h1>
           <p className="text-slate-900 font-[500] pt-4">
             Homepage / Shopping Cart
           </p>
         </div>
-        <div className="flex justify-start w-full items-top py-10 ">
+        <div className="flexStart w-full items-top ">
           <div className="w-2/3  border-r pr-10">
             {products.map((product) => {
               if (cartItems[product.id] > 0) {
@@ -35,25 +35,25 @@ const Cart = () => {
             })}
           </div>
           {totalAmount > 0 ? (
-            <div className="w-1/3 pl-12 flex flex-col gap-4 ">
+            <div className="w-1/3 pl-12 flexCol gap-4 ">
               <h2 className="text-lg font-[600] pb-2">Order Summary</h2>
-              <div className="text-slate-500 text-sm flex justify-between items-center border-b pb-4">
+              <div className="text-slate-500 text-sm flexBetween border-b pb-4">
                 <p>subtotal</p>
                 <p className="text-slate-800 font-[600]">${totalAmount}</p>
               </div>
-              <div className="text-slate-500 text-sm flex justify-between items-center border-b pb-4">
+              <div className="text-slate-500 text-sm flexBetween border-b pb-4">
                 <p>Shipping estimate</p>
                 <p className="text-slate-800 font-[600]">
                   ${shippingCharge}.00
                 </p>
               </div>
-              <div className="text-slate-500 text-sm flex justify-between items-center border-b pb-4">
+              <div className="text-slate-500 text-sm flexBetween border-b pb-4">
                 <p>Tax estimate</p>
                 <p className="text-slate-800 font-[600]">
                   ${taxEstimate.toFixed(2)}
                 </p>
               </div>
-              <div className="text-slate-500 text-sm flex justify-between items-center pb-4">
+              <div className="text-slate-500 text-sm flexBetween pb-4">
                 <p className="text-base text-slate-800 font-[600]">
                   Order total
                 </p>

@@ -13,10 +13,10 @@ const Navabar = () => {
   const { getTotalCartItem } = useContext(ShopContext);
   const totalItem = getTotalCartItem();
   return (
-    <nav className=" sticky top-0 w-full z-50 bg-white border-b">
-      <div className="flex justify-between items-center max-w-screen-xl mx-auto">
+    <nav className=" sticky top-0 w-full z-50 bg-white border-b py-1">
+      <div className="flexBetween max-w-screen-xl mx-auto">
         <Link to="/">
-          <div className="flex justify-center items-center text-2xl gap-2 font-[600]">
+          <div className="flexCenter text-2xl gap-2 font-[600]">
             <div className="text-4xl pb-1">
               <IoBagHandle />
             </div>
@@ -26,7 +26,7 @@ const Navabar = () => {
         <div>
           <NavLinks />
         </div>
-        <div className="flex justify-center items-center gap-6 text-2xl">
+        <div className="flexCenter gap-6 text-2xl">
           <div className="cursor-pointer">
             <CiSearch />
           </div>

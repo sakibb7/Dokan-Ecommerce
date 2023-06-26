@@ -11,6 +11,7 @@ import {HiOutlineArrowLeft} from "react-icons/hi"
 
 //Product Section Icons
 import {AiOutlineHeart} from "react-icons/ai"
+import {AiFillHeart} from "react-icons/ai"
 import {AiFillStar} from "react-icons/ai"
 import {HiOutlineReceiptPercent} from "react-icons/hi2"
 import {BsBagCheckFill} from "react-icons/bs"
@@ -83,6 +84,7 @@ export{
     HiOutlineArrowRight,
     HiOutlineArrowLeft,
     AiOutlineHeart,
+    AiFillHeart,
     AiFillStar,
     HiOutlineReceiptPercent,
     BsBagCheckFill,

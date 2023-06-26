@@ -21,15 +21,15 @@ const HeroSlider = () => {
           <HiOutlineArrowLeft />
         </div>
       </div>
-      <div className="flex justify-between items-center max-w-screen-xl mx-auto">
+      <div className="flexBetween max-w-screen-xl mx-auto">
         <div className="w-[60%] py-[180px]">
           <h2 className="text-lg font-[500] text-slate-800">
             In this season, find the best 🔥
           </h2>
-          <h1 className="text-7xl py-10 text-slate-900 font-[600] leading-[80px]">
-            Exclusive collection for everyone
+          <h1 className="headingOne">
+            Exclusive collection <br /> for everyone
           </h1>
-          <button className="flex justify-center items-center bg-slate-900 hover:bg-slate-800 text-slate-50 px-8 py-5 rounded-full font-[500]">
+          <button className="flexCenter bg-slate-900 hover:bg-slate-800 text-slate-50 px-8 py-5 rounded-full font-[500]">
             <span>Explore now</span>
             <span className="text-2xl pl-2">
               <CiSearch />

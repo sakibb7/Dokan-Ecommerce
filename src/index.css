@@ -10,3 +10,73 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* Typography */
+.headingOne{
+    padding:.5em 0;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height:5.5rem;
+}
+
+.headingTwo{
+    padding:.3em 0;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height:4rem;
+}
+
+.headingThree{
+    padding:.3em 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height:4rem;
+}
+
+.headingFour{
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height:2.5rem;
+}
+
+.headingFive{
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height:1.5rem;
+}
+
+.headingSix{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height:1rem;
+}
+
+
+
+
+/* Flexbox style */
+
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexStart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+
