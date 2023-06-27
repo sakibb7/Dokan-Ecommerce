@@ -29,8 +29,8 @@ const ProductCollections = () => {
     <section>
       <Navbar />
       <div className="max-w-screen-xl mx-auto">
-        <div className="py-16 w-1/2">
-          <h1 className="text-4xl font-[600] text-slate-800 py-4">
+        <div className="py-16 w-1/2 sm:w-full sm:px-8">
+          <h1 className="text-4xl font-[600] text-slate-800 py-4 sm:text-center">
             All Products
           </h1>
           <p className="text-slate-600">
@@ -38,27 +38,29 @@ const ProductCollections = () => {
             easy for you to share your designs with more like-minded people.
           </p>
         </div>
-        <div className="flex justify-between items-center text-white text-[17px] font-[500] py-10 border-b">
-          <div className="flex justiy-center items-center gap-12">
-            <button className="bg-slate-900 px-5 rounded-full py-2">
-              All Items
-            </button>
-            <div className="flex justify-center items-center gap-14">
-              {sectionMenu.map((individualSpan, index) => (
-                <button
-                  key={index}
-                  className="text-slate-500"
-                  onClick={() => handleChange(individualSpan)}
-                >
-                  {individualSpan.name}
-                </button>
-              ))}
+        <div className="flexBetween text-white xl:text-[17px] sm:text-sm font-[500] xl:py-10 sm:py-4 border-b">
+          <div className="flex xl:justify-between sm:flex-col xl:gap-12 sm:gap-4 w-full px-4">
+            <div className="flex justify-start items-center sm:gap-6 xl:gap-8">
+              <button className="bg-slate-900 px-5 rounded-full py-2">
+                All Items
+              </button>
+              <div className="flexCenter xl:gap-14 sm:gap-4">
+                {sectionMenu.map((individualSpan, index) => (
+                  <button
+                    key={index}
+                    className="text-slate-500"
+                    onClick={() => handleChange(individualSpan)}
+                  >
+                    {individualSpan.name}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
-          <div>
-            <button className="bg-slate-900 px-8 rounded-full py-2">
-              Filter
-            </button>
+            <div className="sm:py-4">
+              <button className="bg-slate-900 px-8 rounded-full py-2 sm:py-3 w-full">
+                Filter
+              </button>
+            </div>
           </div>
         </div>
         <div className="border-b">
@@ -67,7 +69,7 @@ const ProductCollections = () => {
             {active ? (
               <div>
                 {filteredProducts.length > 0 && (
-                  <div className="grid grid-cols-4 gap-8">
+                  <div className="grid xl:grid-cols-4 gap-8  sm:p-12">
                     {filteredProducts.map(
                       ({
                         id,
@@ -102,7 +104,7 @@ const ProductCollections = () => {
                 )}
               </div>
             ) : (
-              <div className="grid grid-cols-4 gap-8">
+              <div className="grid xl:grid-cols-4 gap-8 sm:p-12">
                 {products.map(
                   ({
                     id,

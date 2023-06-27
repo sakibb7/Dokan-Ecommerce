@@ -32,14 +32,14 @@ const Checkout = () => {
     <div>
       <Navabar />
       <div className="max-w-screen-xl mx-auto py-20">
-        <div className="border-b pb-16">
+        <div className="border-b pb-16 sm:text-center">
           <h1 className="font-[600] text-4xl text-slate-800">Checkout</h1>
           <p className="text-slate-900 font-[500] pt-4">
             Homepage / Shopping Cart / Checkout
           </p>
         </div>
-        <div className="w-full flex flex-start items-top pt-10">
-          <div className="w-[65%] pr-20">
+        <div className="w-full flex sm:flex-col flex-start items-top pt-10">
+          <div className="w-[65%] sm:w-full pr-20 sm:p-4">
             <div className="border rounded-lg flexBetween p-4">
               <div>
                 <p className="text-slate-800">CONTACT INFO</p>
@@ -63,9 +63,9 @@ const Checkout = () => {
               </div>
             </div>
             <div className="w-full mt-[-40px]">
-              <form action="" className=" gap-8 flexCol border p-10">
-                <div className="flex gap-4">
-                  <div className="flexCol w-1/2">
+              <form action="" className=" gap-8 flexCol border p-10 sm:p-6">
+                <div className="flex sm:flex-col gap-4">
+                  <div className="flexCol w-1/2 sm:w-full">
                     <label htmlFor="fname" className=" font-[500]">
                       First name
                     </label>
@@ -76,7 +76,7 @@ const Checkout = () => {
                       className="border text-slate-600 py-2 px-4 mt-2 rounded-full"
                     />
                   </div>
-                  <div className="flex flex-col w-1/2">
+                  <div className="flex flex-col w-1/2  sm:w-full">
                     <label htmlFor="fname" className=" font-[500]">
                       Last name
                     </label>
@@ -88,8 +88,8 @@ const Checkout = () => {
                     />
                   </div>
                 </div>
-                <div className="flex gap-4">
-                  <div className="flex flex-col w-[70%]">
+                <div className="flex sm:flex-col gap-4">
+                  <div className="flex flex-col w-[70%] sm:w-full">
                     <label htmlFor="fname" className=" font-[500]">
                       Address
                     </label>
@@ -100,7 +100,7 @@ const Checkout = () => {
                       className="border text-slate-600 py-2 px-4 mt-2 rounded-full"
                     />
                   </div>
-                  <div className="flex flex-col w-[30%]">
+                  <div className="flex flex-col w-[30%]  sm:w-full">
                     <label htmlFor="fname" className=" font-[500]">
                       App, Suite<sup> *</sup>
                     </label>
@@ -112,8 +112,8 @@ const Checkout = () => {
                     />
                   </div>
                 </div>
-                <div className="flex gap-4">
-                  <div className="flex flex-col w-1/2">
+                <div className="flex sm:flex-col gap-4">
+                  <div className="flex flex-col w-1/2  sm:w-full">
                     <label htmlFor="fname" className=" font-[500]">
                       City
                     </label>
@@ -124,7 +124,7 @@ const Checkout = () => {
                       className="border text-slate-600 py-2 px-4 mt-2 rounded-full"
                     />
                   </div>
-                  <div className="flex flex-col w-1/2">
+                  <div className="flex flex-col w-1/2  sm:w-full">
                     <label htmlFor="fname" className=" font-[500]">
                       Country
                     </label>
@@ -136,8 +136,8 @@ const Checkout = () => {
                     />
                   </div>
                 </div>
-                <div className="flex gap-4">
-                  <div className="flexCol w-1/2">
+                <div className="flex gap-4 sm:flex-col">
+                  <div className="flexCol w-1/2  sm:w-full">
                     <label htmlFor="fname" className=" font-[500]">
                       State/Province
                     </label>
@@ -148,7 +148,7 @@ const Checkout = () => {
                       className="border text-slate-600 py-2 px-4 mt-2 rounded-full"
                     />
                   </div>
-                  <div className="flexCol w-1/2">
+                  <div className="flexCol w-1/2  sm:w-full">
                     <label htmlFor="fname" className=" font-[500]">
                       Postal code
                     </label>
@@ -160,18 +160,18 @@ const Checkout = () => {
                     />
                   </div>
                 </div>
-                <div>
-                  <button className="bg-slate-800 font-[500] text-white rounded-full py-3 w-1/3">
+                <div className="sm:flex-col">
+                  <button className="bg-slate-800 font-[500] text-white rounded-full py-3 w-1/3 sm:w-full sm:mb-4">
                     Save & Continue
                   </button>
-                  <button className="bg-slate-50 py-4 px-8 ml-8 rounded-full hover:bg-slate-100">
+                  <button className="bg-slate-50 py-4 px-8 ml-8 sm:ml-0 rounded-full hover:bg-slate-100  sm:w-full">
                     Cancel
                   </button>
                 </div>
               </form>
             </div>
           </div>
-          <div className="w-[35%]">
+          <div className="w-[35%] sm:w-full sm:p-4">
             <p className="text-slate-800 font-[600] text-xl">Order summary</p>
             <div className="flexCol justify-between items-top gap-8 border-b py-10">
               {products.map(({ id, title, image, price }) => {
@@ -217,7 +217,7 @@ const Checkout = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="flexCol justify-between items-center">
+                      <div className="flexCol justify-between items-center gap-4">
                         <p className="border-2 border-green-500 text-green-500 font-[500] px-3 rounded-lg">
                           ${price}
                         </p>
@@ -238,15 +238,15 @@ const Checkout = () => {
               <p className="pt-4 text-sm text-slate-800">
                 Use <span>&quot;Dokan20&quot;</span> to get 20% off
               </p>
-              <div className="flexBetween">
+              <div className="flexBetween sm:flex-col">
                 <input
                   type="text"
-                  className="border rounded-full py-1.5 my-4 px-3"
+                  className="border rounded-full py-1.5 my-4 px-3 sm:w-full"
                   onChange={(e) =>
                     setCoupon(e.target.value === "Dokan20" && 0.1)
                   }
                 />
-                <button className="bg-slate-200 text-slate-700 font-[500] py-2 px-4 rounded-full">
+                <button className="bg-slate-200 text-slate-700 font-[500] py-2 px-4 rounded-full sm:w-full">
                   Apply
                 </button>
               </div>

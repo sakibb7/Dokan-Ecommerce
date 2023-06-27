@@ -165,8 +165,8 @@ export const mainMenu =[
     },
     {
         id:106,
-        name:"Explore",
-        link:"/",
+        name:"All Products",
+        link:"/all-products",
     }
 ]
 

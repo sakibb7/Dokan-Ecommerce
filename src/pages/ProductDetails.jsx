@@ -31,8 +31,8 @@ const ProductDetails = () => {
     <div>
       <Navbar />
       <div className="max-w-screen-xl mx-auto ">
-        <div className="w-full flex justify-start items-top gap-12 py-10">
-          <div className="w-1/2 grid grid-cols-2 gap-8">
+        <div className="w-full flex sm:flex-col justify-start items-top gap-12 py-10 sm:p-6">
+          <div className="w-1/2 sm:w-full grid grid-cols-2 gap-8">
             <img
               src={productImage1}
               alt=""
@@ -41,7 +41,7 @@ const ProductDetails = () => {
             <img src={productImage2} alt="" className="rounded-[20px]" />
             <img src={productImage3} alt="" className="rounded-[20px]" />
           </div>
-          <div className="flexCol pt-10">
+          <div className="flexCol pt-10 sm:pt-6">
             <h1 className="text-3xl font-[600] text-slate-800">
               {bodyData.title}
             </h1>
@@ -56,7 +56,7 @@ const ProductDetails = () => {
               <p className="text-slate-700 px-4">
                 (<u>{bodyData.reviews} reviews</u>)
               </p>
-              <p className="text-slate-700 font-[500]">New in</p>
+              <p className="text-slate-700 font-[500] sm:hidden">New in</p>
             </div>
             <div className="py-4">
               <p>
@@ -108,7 +108,7 @@ const ProductDetails = () => {
                   +
                 </button>
               </div>
-              <div className="bg-slate-800 text-slate-50 px-32 py-4 flexCenter gap-2 font-[500] text-md rounded-full">
+              <div className="bg-slate-800 text-slate-50 px-32 sm:px-10 py-4 flexCenter gap-2 font-[500] text-md rounded-full">
                 <IoBagHandle />{" "}
                 <Link to="/cart">
                   <button>Add to cart</button>
@@ -118,7 +118,7 @@ const ProductDetails = () => {
           </div>
         </div>
 
-        <div className="border-b mb-20 pb-20 w-[70%]">
+        <div className="border-b mb-20 pb-20 w-[70%] sm:w-full sm:px-8">
           <h2 className="text-2xl text-slate-900 font-[600] py-10">
             Product Details
           </h2>

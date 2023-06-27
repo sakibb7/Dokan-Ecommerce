@@ -20,14 +20,14 @@ const Cart = () => {
     <div>
       <Navabar />
       <div className="max-w-screen-xl mx-auto py-20">
-        <div className="border-b pb-16 mb-10">
+        <div className="border-b pb-16 mb-10 sm:text-center">
           <h1 className="font-[600] text-4xl text-slate-800">Shopping Cart</h1>
           <p className="text-slate-900 font-[500] pt-4">
             Homepage / Shopping Cart
           </p>
         </div>
-        <div className="flexStart w-full items-top ">
-          <div className="w-2/3  border-r pr-10">
+        <div className="flexStart sm:flex-col w-full items-top ">
+          <div className="w-2/3 sm:w-full  border-r pr-10 sm:pr-0">
             {products.map((product) => {
               if (cartItems[product.id] > 0) {
                 return <CartItems data={product} key={products.id} />;
@@ -35,7 +35,7 @@ const Cart = () => {
             })}
           </div>
           {totalAmount > 0 ? (
-            <div className="w-1/3 pl-12 flexCol gap-4 ">
+            <div className="w-1/3 sm:w-full pl-12 sm:p-4 flexCol gap-4 ">
               <h2 className="text-lg font-[600] pb-2">Order Summary</h2>
               <div className="text-slate-500 text-sm flexBetween border-b pb-4">
                 <p>subtotal</p>
