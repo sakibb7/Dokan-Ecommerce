@@ -4,7 +4,7 @@ const StepCard = ({ image, title, desc, step, bgColor, color }) => {
     color: color,
   };
   return (
-    <div className="flexCol justify-center items-center gap-5">
+    <div className="flexCol justify-center items-center gap-6">
       <img src={image} alt="" className="h-32" />
       <p className={`py-1 px-2 rounded-full text-xs font-[600]`} style={style}>
         {step}

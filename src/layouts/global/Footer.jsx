@@ -9,8 +9,8 @@ import { IoBagHandle } from "../../assets";
 
 const Footer = () => {
   return (
-    <div className="border-t">
-      <div className="max-w-screen-xl mx-auto py-20 grid grid-cols-5 text-slate-600 text-[15px]">
+    <div className="border-t sm:px-8">
+      <div className="max-w-screen-xl mx-auto py-20 grid xl:grid-cols-5 sm:grid-cols-2 sm:gap-8 text-slate-600 text-[15px]">
         <div className="flexCol gap-2">
           <div className="flexStart text-xl gap-2 font-[600] text-slate-900">
             <div className="text-2xl pb-1">

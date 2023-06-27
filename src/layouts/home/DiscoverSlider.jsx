@@ -5,14 +5,14 @@ import { dog } from "../../assets";
 const DiscoverSlider = () => {
   return (
     <div>
-      <div className="py-20 px-[150px]">
+      <div className="py-20 xl:px-[150px] sm:px-4">
         <div className="max-w-screen-xl mx-auto ">
           <SectionTitle
             titleFirstPart="Discover more."
             titleSecondPart="Good things are waiting for you"
           />
         </div>
-        <div className="grid grid-cols-3 gap-6 pt-10">
+        <div className="grid xl:grid-cols-3 gap-6 pt-10">
           <div className="bg-orange-300 rounded-[15px]">
             <GiftCard
               title="Explore new arrivals"

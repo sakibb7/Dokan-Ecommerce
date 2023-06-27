@@ -3,7 +3,7 @@ import { step1, step2, step3, step4 } from "../../assets";
 
 const DeliverySteps = () => {
   return (
-    <div className="max-w-screen-xl mx-auto grid grid-cols-4 gap-20 py-16 border-b">
+    <div className="max-w-screen-xl mx-auto grid xl:grid-cols-4 xl:gap-20 sm:gap-12 py-16 sm:px-16 border-b">
       <StepCard
         image={step1}
         title="Enjoy the product"

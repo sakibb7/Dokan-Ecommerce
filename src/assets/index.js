@@ -2,6 +2,8 @@
 import { IoBagHandle } from "react-icons/io5";
 import {CiSearch} from "react-icons/ci"
 import {AiOutlineUser} from "react-icons/ai"
+import {AiOutlineClose } from "react-icons/ai"
+import {RxHamburgerMenu  } from "react-icons/rx"
 import {IoCartOutline} from "react-icons/io5"
 import {MdOutlineKeyboardArrowDown} from "react-icons/md"
 
@@ -77,6 +79,8 @@ import quoteRight from "./icons/quoteRight.svg"
 
 export{
     IoBagHandle,
+    AiOutlineClose,
+    RxHamburgerMenu,
     CiSearch,
     AiOutlineUser,
     IoCartOutline,
