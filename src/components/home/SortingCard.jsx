@@ -4,7 +4,7 @@ const SortingCard = () => {
   return (
     <div className="flexBetween text-white xl:text-[17px] sm:text-sm font-[500] xl:py-10 sm:py-4 border-b">
       <div className="flex xl:justify-between sm:flex-col xl:gap-12 sm:gap-4 w-full px-4">
-        <div className="flex justify-between items-center sm:gap-4 xl:gap-8">
+        <div className="flex justify-start items-center sm:gap-6 xl:gap-8">
           <button className="bg-slate-900 px-5 rounded-full py-2">
             All Items
           </button>

@@ -71,7 +71,7 @@ const NavLinks = () => {
       </ul>
 
       {/* Mobile Menu */}
-      <ul className="xl:hidden flex flex-1 justify-end items-center py-2">
+      <ul className="xl:hidden flex justify-between items-center py-2">
         <div
           className="pt-1 text-lg cursor-pointer text-slate-700"
           onClick={() => setToggle((prev) => !prev)}

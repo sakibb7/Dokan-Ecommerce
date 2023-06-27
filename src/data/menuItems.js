@@ -2,7 +2,7 @@ import {RiWomenLine,
     AiOutlineMan,
     TbMoodKid,
     MdSportsBasketball,
-    AiOutlineCrown,
+   // AiOutlineCrown,
     // GiGoldBar
 } from "../assets"
 
@@ -191,9 +191,4 @@ export const sectionMenu = [
         name:"Sports",
         icon:{MdSportsBasketball},
     },
-    {
-        id:'beauty',
-        name:"Beauty",
-        icon:{AiOutlineCrown},
-    }
 ]

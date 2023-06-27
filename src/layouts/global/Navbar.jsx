@@ -47,7 +47,7 @@ const Navabar = () => {
         </div>
 
         {/* Mobile menubar */}
-        <div className="flex xl:hidden justify-between itmes-center gap-20 px-8 py-4">
+        <div className="flex xl:hidden justify-between itmes-center sm:gap-12 py-4 sm:px-4 w-full">
           <Link to="/">
             <div className="flexCenter text-xl gap-2 font-[600]">
               <div className="text-3xl pb-1">
