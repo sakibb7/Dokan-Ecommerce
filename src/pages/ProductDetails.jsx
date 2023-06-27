@@ -46,10 +46,10 @@ const ProductDetails = () => {
               {bodyData.title}
             </h1>
             <div className="flexStart py-4">
-              <p className="border-2 border-green-500 text-green-500 font-[600] px-3 rounded-lg text-lg">
+              <p className="border-2 border-green-500 text-green-500 font-[600] px-3 sm:px-2 rounded-lg text-lg">
                 ${bodyData.price}
               </p>
-              <p className="flexCenter border-l-2 pl-4 ml-4 py-1 font-[500]">
+              <p className="flexCenter border-l-2 pl-4 sm:pl-2 ml-4 sm:ml-4 py-1 font-[500]">
                 <AiFillStar style={{ color: "#facc15" }} size={20} />
                 <span className="pl-1"> {bodyData.rating}</span>
               </p>
@@ -86,7 +86,7 @@ const ProductDetails = () => {
               </div>
             </div>
 
-            <div className="flexBetween gap-4 border-b pb-8">
+            <div className="flexBetween gap-4 sm:gap-2 border-b pb-8">
               <div className="bg-slate-50 py-3 px-4 rounded-full">
                 <button
                   className="text-slate-500 font-[400] text-2xl border rounded-full px-3 py-0.5 cursor-pointer"
@@ -108,7 +108,7 @@ const ProductDetails = () => {
                   +
                 </button>
               </div>
-              <div className="bg-slate-800 text-slate-50 px-32 sm:px-10 py-4 flexCenter gap-2 font-[500] text-md rounded-full">
+              <div className="bg-slate-800 text-slate-50 px-32 sm:px-4 py-4 flexCenter gap-2 font-[500] text-md rounded-full">
                 <IoBagHandle />{" "}
                 <Link to="/cart">
                   <button>Add to cart</button>

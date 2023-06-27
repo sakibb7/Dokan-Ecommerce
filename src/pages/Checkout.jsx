@@ -178,7 +178,7 @@ const Checkout = () => {
                 if (cartItems[id] > 0) {
                   return (
                     <div key={id} className="flexBetween">
-                      <div className="flexStart gap-8">
+                      <div className="flexStart gap-8 sm:gap-2">
                         <img
                           src={image}
                           alt=""
@@ -218,7 +218,7 @@ const Checkout = () => {
                         </div>
                       </div>
                       <div className="flexCol justify-between items-center gap-4">
-                        <p className="border-2 border-green-500 text-green-500 font-[500] px-3 rounded-lg">
+                        <p className="border-2 border-green-500 text-green-500 font-[500] px-3 sm:px-0 rounded-lg">
                           ${price}
                         </p>
                         <button
