@@ -16,7 +16,7 @@ const Navabar = () => {
     <nav className=" sticky top-0 w-full z-50 bg-white border-b py-1">
       <div className="flexBetween max-w-screen-xl mx-auto">
         {/* Desktop menubar */}
-        <div className="xl:flex sm:hidden justify-between items-center w-full">
+        <div className="xl:flex sm:hidden md:hidden justify-between items-center w-full">
           <Link to="/">
             <div className="flexCenter text-2xl gap-2 font-[600] items-center">
               <div className="text-4xl pb-1">
@@ -47,7 +47,7 @@ const Navabar = () => {
         </div>
 
         {/* Mobile menubar */}
-        <div className="flex xl:hidden justify-between itmes-center sm:gap-12 py-4 sm:px-8 w-full">
+        <div className="flex xl:hidden justify-between itmes-center gap-12 py-4 px-8 w-full">
           <Link to="/">
             <div className="flexCenter text-xl gap-2 font-[600]">
               <div className="text-3xl pb-1">

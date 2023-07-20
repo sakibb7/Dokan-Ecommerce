@@ -10,10 +10,10 @@ export default {
   ],
   theme: {
     screens: {
-      'sm': {'min': '400px', 'max': '767px'},
+      'sm': {'max': '480px'},
       // => @media (min-width: 640px) { ... }
 
-     'md': '768px',
+     'md': '481px',
       // => @media (min-width: 768px) { ... }
 
       'lg': '1024px',
@@ -35,6 +35,12 @@ export default {
         secondaryColor: "#334155",
         headingColor:"rgb(1,1,1)",
         ashColor:"rgb(121,123,121)",
+      },
+      fontSize: {
+        clamp: "clamp(1.875rem, 3.5vw, 6rem)",
+        clamp2:"clamp(400px, 5.5vw, 900px)",
+      },
+      width:{
       }
     },
   },

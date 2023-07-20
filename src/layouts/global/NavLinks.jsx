@@ -16,9 +16,9 @@ const NavLinks = () => {
   return (
     <>
       {/* Desktop Menu */}
-      <ul className="xl:flex sm:hidden items-center gap-10 text-[15px] font-[500]">
+      <ul className="xl:flex sm:hidden md:hidden items-center gap-10 text-[15px] font-[500]">
         {mainMenu.map(({ id, name, link, subMenu, subLinks }) => (
-          <div className="group py-6 text-slate-700" key={id}>
+          <div className="group py-6 text-slate-700 " key={id}>
             <li className="">
               <Link to={link}>
                 <div className="flexCenter">
@@ -30,7 +30,7 @@ const NavLinks = () => {
               </Link>
             </li>
             {subMenu && (
-              <div className="absolute hidden bg-white group-hover:block hover:block inset-x-0 top-full drop-shadow-md pb-5">
+              <div className="absolute hidden bg-white group-hover:block hover:block inset-x-0 top-full drop-shadow-md pb-5 ">
                 <div className=" pt-5 max-w-screen-xl mx-auto border-t border-slate-200 flexBetween gap-20">
                   <div className=" grid grid-cols-4 gap-10 w-[62%] text-sm">
                     {subLinks.map(({ title, sublink }) => (

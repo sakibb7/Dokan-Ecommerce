@@ -1,11 +1,12 @@
-import SingleProduct from "../../components/home/SingleProduct";
-import SortingCard from "../../components/home/SortingCard";
-import { products } from "../../data/productData";
+// import SingleProduct from "../../components/home/SingleProduct";
+// import SortingCard from "../../components/home/SortingCard";
+// import { products } from "../../data/productData";
+import ProductCollections from "../../pages/ProductCollections";
 
 const TrendingSection = () => {
-  const trendingProducts = products.filter(
-    (product) => product.trending === true
-  );
+  // const trendingProducts = products.filter(
+  //   (product) => product.trending === true
+  // );
   return (
     <section className="max-w-screen-xl mx-auto pt-28">
       <div className="sm:px-4">
@@ -16,7 +17,7 @@ const TrendingSection = () => {
           Discover the most trending products in Dokan
         </p>
       </div>
-      <SortingCard />
+      {/* <SortingCard />
       <div className="py-10 grid xl:grid-cols-4 gap-8 sm:p-12">
         {trendingProducts.map(
           ({ id, image, title, price, rating, reviews, offerDetails }) => (
@@ -32,7 +33,9 @@ const TrendingSection = () => {
             </div>
           )
         )}
-      </div>
+      </div> */}
+
+      <ProductCollections />
     </section>
   );
 };

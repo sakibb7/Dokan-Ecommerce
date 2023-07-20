@@ -21,22 +21,22 @@ const HeroSlider = () => {
           <HiOutlineArrowLeft />
         </div>
       </div>
-      <div className="xl:flexBetween sm:flex-col max-w-screen-xl mx-auto">
-        <div className="xl:w-[60%] sm:w-full sm:pb-[300px] xl:py-[180px] sm:pt-[70px] px-8">
+      <div className="xl:flexBetween flex-col max-w-screen-xl mx-auto">
+        <div className="xl:w-[60%] w-full pb-[300px] xl:py-[180px] pt-[70px] px-8 ">
           <h2 className="xl:text-lg font-[500] text-slate-800">
             In this season, find the best 🔥
           </h2>
-          <h1 className="sm:text-3xl xl:text-6xl font-[600] xl:leading-[4.5rem] sm:leading-10 xl:py-10 sm:py-6">
+          <h1 className="text-clamp font-[600] xl:leading-[4.5rem] leading-10 xl:py-10 py-6">
             Exclusive collection <br /> for everyone
           </h1>
-          <button className="flexCenter bg-slate-900 hover:bg-slate-800 text-slate-50 xl:px-8 sm:px-4 sm:py-3 xl:py-5 rounded-full font-[500]">
+          <button className="flexCenter bg-slate-900 hover:bg-slate-800 text-slate-50 xl:px-8 px-4 py-3 xl:py-5 rounded-full font-[500]">
             <span>Explore now</span>
             <span className="text-2xl pl-2">
               <CiSearch />
             </span>
           </button>
         </div>
-        <div className="absolute bottom-0 right-5 xl:w-[900px] sm:w-[400px]">
+        <div className="absolute bottom-0 right-5 xl:w-[900px] md:w-[500px] lg:w-[750px] w-[400px]">
           <img src={sliderPic1} alt="" />
         </div>
       </div>
