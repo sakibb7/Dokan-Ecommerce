@@ -12,7 +12,7 @@ const NewArrivals = () => {
           titleSecondPart="REY backpacks & bags"
         />
       </div>
-      <div className="py-10 grid xl:grid-cols-4 sm:p-16 gap-8">
+      <div className="py-10 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:p-16 gap-8">
         {newArrival.map(
           ({ id, image, title, price, rating, reviews, offerDetails }) => (
             <div className="" key={id}>
